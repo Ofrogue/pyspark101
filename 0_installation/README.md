@@ -1,7 +1,21 @@
-# Installation for Windows
+You can find the installation guides for 
+* [Windows](#installation-on-windows)
+* [Mac](#installation-on-mac)  
+* [Linux](#installation-on-linux)
+
+We need to get installed:
+* Java
+* Miniconda (handy package management system for Python)
+* PySpark (Python package to interact with Spark)
+* Visual Studio Code (or any other IDE)
+
+That should be enough to study Spark with Python.  
+For Windows users we propose to use WSL for a smoother development process (see details in [Windows installation guide](#installation-on-windows)).
+
+# Installation on Windows
 ## Requirements
 Windows 10 / 11 Pro / Education
-(Education can be activated by Taltech; login into Taltech Outlook and follow https://tallinn.onthehub.com/)
+<!-- (Education can be activated by Taltech; login into Taltech Outlook and follow https://tallinn.onthehub.com/) -->
 
 
 ## Linux Subsystem
@@ -106,7 +120,7 @@ pyspark
 That will satrt an interactive session.
 If you can type ```spark``` and get no errors. most probably everything is set up correctly.
 
-# Installation for Mac
+# Installation on Mac
 Check Java version
 ```sh
 java --version 
@@ -147,7 +161,7 @@ conda activate spark-env
 pyspark
 ```
 
-# Installation for Linux
+# Installation on Linux
 Install Java 8  
 Install miniconda  
 Create ```spark-env``` environment:
