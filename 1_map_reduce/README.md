@@ -19,7 +19,7 @@ Python is a multi-paradigme language, so some useful elements of functional prog
 ### Map
 ```python
 # let's define a function that returns a value incremented by 1  
-def incement(x):
+def increment(x):
     return x + 1
 
 # and a simple list we want to modify
@@ -42,7 +42,7 @@ arr3 = list(
 
 
 # defining a separate function for just adding 1 is not handy
-# there is another way to define such functions with the lambda keyword
+# there is another way to define such functions anonymously with lambda keyword
 
 arr4 = list(
     map(
@@ -107,7 +107,7 @@ arr_sum = (((((1 + 2) + 3) + 4) + 5) + 6)
 ```
 
 ## Example
-Count for each triplet the smallest value using `map` and `reduce`?
+For each triplet in a list compute the smallest element using `map` and `reduce`?
 ```python
 arr = [(1, 2, 3), (4, 5, 6), (7, 8, 9), (10, 11, 12)]
 
@@ -155,5 +155,5 @@ d = lambda a, b: a if a > b else b
 but as well you can use a regular function instead of lambda expression.
 
 
-## 2. Sum of Odd
+## 2. Sum of Odds
 Create a function that takes an iterable as an argument and returns a sum of odd numbers in it using `map`, `filter` and `reduce`.
