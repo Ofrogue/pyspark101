@@ -153,7 +153,7 @@ You can build a triangle if `a + b >= c`.
 Perform operation using Spark.
 
 ## 2 Distinct
-Use PySpark documentation and write code that finds distinct values in RDD. 
+Use PySpark documentation and write a code that finds distinct values in RDD. 
 
 ## 3 CSV file
 Try to load a comma separated file file into RDD, split each line by ",", and display top(10) rows.
