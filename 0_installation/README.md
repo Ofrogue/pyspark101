@@ -96,7 +96,7 @@ In VScode  install:
 Open remote development tab on the left and choose connection to WSL Ubuntu.  
 After connection is established a new VScode window will appear.  
 In that window:
-* Start an embedded console (Crl j or drag from the bottom)
+* Start an embedded console (Crl+j or drag from the bottom)
 * Create a folder by typing 
      ```sh 
      mkdir parct0
@@ -121,7 +121,8 @@ That will satrt an interactive session.
 If you can type ```spark``` and get no errors. most probably everything is set up correctly.
 
 # Installation on Mac
-Check Java version
+
+Check Java version in terminal
 ```sh
 java --version 
 ```
@@ -155,7 +156,7 @@ Create and open a folder in VScode.
 In VScode go to View->Command Palette, search for python interpreter, choose a path to the conda environment /home/{user}/miniconda3/envs/spark-env/bin/python
 
 To test installation
-Open embedded terminal in VScode (Cmd j or drag from the bottom) and run 
+Open embedded terminal in VScode (Cmd+j or drag from the bottom) and run 
 ```sh
 conda activate spark-env
 pyspark
