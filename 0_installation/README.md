@@ -14,7 +14,7 @@ For Windows users we propose to use WSL for a smoother development process (see 
 
 # Installation on Windows
 ## Requirements
-Windows 10 / 11 Pro / Education
+Windows 10 (or 11) - Pro (or Education)
 <!-- (Education can be activated by Taltech; login into Taltech Outlook and follow https://tallinn.onthehub.com/) -->
 
 
