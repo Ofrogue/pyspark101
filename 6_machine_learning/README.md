@@ -1,10 +1,10 @@
 # Spark ML
 
 ## Adult + Random Forest
-We will use same UCI Adult datataset.
+We will use the same UCI Adult datataset.
 https://archive.ics.uci.edu/ml/datasets/adult
 
-Last time we kept data files in the same folder as code.
+Last time we kept data files in the same folder as our code.
 Let's download those in a separate sub-folder.
 
 ```sh
@@ -68,7 +68,7 @@ df = df.na.drop()
 # show the number of missing values per column after drop
 df.select([F.count(F.when(F.col(col).isNull() | F.isnan(col), col)).alias(col) for col in df.columns]).show()
 print("rows after drop", df.count())
-# remove ative-country coulumn as it has
+# remove native-country coulumn as it has
 # too many categories for Random Forest
 df = df.drop("native-country")
 ```
@@ -163,7 +163,7 @@ df_test.show(2)
 ```py
 tdf = model.transform(df_test)
 
-# accuracycon the test set
+# accuracy on the test set
 tdf.select(
     (F.count(F.when(F.col("prediction")==F.col("income-class-indexed"), "prediction")) / F.count("prediction")).alias("acc_test") 
 ).show()
@@ -176,4 +176,4 @@ Try to apply any other classifier from Spark ML for the same setup.
 ## 2 Roses are red, Iris is f(x, y, z, t)
 Train a Decision Tree classifier for Iris dataset https://archive.ics.uci.edu/ml/datasets/iris (https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
 
-Make a train and test split for data. You will need `sampleBy` and `substract` methods of DataFrame. Choose the Tartsformers needed.
+Make a train and test split of data. You may need `sampleBy` and `substract` methods of DataFrame.
