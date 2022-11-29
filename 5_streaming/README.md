@@ -1,6 +1,6 @@
 # Structured Streaming
 
-Good thing about structures streaming in Spark is that it supports same interface as DataFrames.
+Good thing about structured streaming in Spark is that it supports the same interface as DataFrames.
 
 Download a file with stock orders
 
